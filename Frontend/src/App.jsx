@@ -1,19 +1,9 @@
-// import React from 'react'
-
-// const App = () => {
-//   return (
-//     <div>App</div>
-//   )
-// }
-
-// export default App
-// const element = <h1>hello</h1>;
 import {Routes,Route, Router} from 'react-router-dom'
 import Navbar from './component/Navbar'
 import Home from './Pages/Home'
-import About from './Pages/About'
+import About from './pages/About'
 import Contact from './Pages/Contact'
-import Service from './Pages/Service'
+import Service from './pages/Service'
 import UseState from './Hooks/UseState'
 import Login from './Auth/Login'
 import Hook from './Hooks/Hook'
@@ -21,7 +11,7 @@ import UseEffect from './Hooks/UseEffect'
 import UseEffectApi from './Hooks/UseEffectApi'
 import Signup from './Auth/Signup'
 import UseRef from './Hooks/UseRef'
-
+import UseReducer from './Hooks/UseReducer' 
 const App = () => {
   return (
     <>
@@ -39,9 +29,10 @@ const App = () => {
          <Route path='useEffect' element={<UseEffect/>}/>
          <Route path='useEffectApi' element={<UseEffectApi/>}/>
          <Route path='useRef'element={<UseRef/>}/>
+         <Route path='useReducer'element={<UseReducer/>}/>
       </Route>
       </Routes>
-    </>
+     </>
   )
 }
 
