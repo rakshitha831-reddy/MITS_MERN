@@ -9,10 +9,11 @@ const Hook = () => {
             <li><Link to='useEffectApi'>useEffectApi</Link></li>
             <li><Link to='useRef'>useRef</Link> </li>
             <li><Link to='useReducer'>useReducer</Link> </li>
-        </ol>
+            <li><Link to='useMemo'>useMemo</Link> </li>
+             <li><Link to='useCallback'>UseCallback</Link> </li>
+             </ol>
         <Outlet/>
     </div>
   )
 }
-
 export default Hook
