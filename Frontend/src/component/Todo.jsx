@@ -5,7 +5,7 @@ const Todo = () => {
     const [task,setTask]=useState("");
     const [todos,setTodos]=useState([]);
     const [editing,setEditing]=useState(null);
-    const API = "http://localhost:3000";
+    const API = "https://mits-mern-fs5i.onrender.com";
     const fetchData = async(req,res)=>{
         const responce = await axios.get(`${API}/api/todo/`)
         setTodos(responce.data)
